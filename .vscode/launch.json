@@ -30,9 +30,9 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch react app",
+            "name": "Launch react app (vite)",
             "url": "http://localhost:5173",
-            "webRoot": "${workspaceFolder}/react",
+            "webRoot": "${workspaceFolder}/react-vite",
             "preLaunchTask": "npm: dev - react"
         }
     ]
