@@ -19,7 +19,14 @@
 			"detail": "ts-node-dev --respawn src/main.ts",
 			"isBackground": true
 		},
-			"isBackground": true
+		{
+			"type": "npm",
+			"script": "test",
+			"path": "fastify",
+			"group": "test",
+			"problemMatcher": [],
+			"label": "npm: test - fastify",
+			"detail": "jest"
 		}
 	]
 }

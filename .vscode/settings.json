@@ -1,4 +1,5 @@
 {
     "explorer.excludeGitIgnore": false,
-    "search.useIgnoreFiles": true
+    "search.useIgnoreFiles": true,
+    "jest.rootPath": "fastify"
 }
