@@ -27,6 +27,15 @@
 			"problemMatcher": [],
 			"label": "npm: test - fastify",
 			"detail": "jest"
+		},
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "nextjs",
+			"problemMatcher": [],
+			"label": "npm: dev - nextjs",
+			"detail": "next dev",
+			"isBackground": true
 		}
 	]
 }

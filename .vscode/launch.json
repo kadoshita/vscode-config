@@ -34,6 +34,38 @@
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}/react-vite",
             "preLaunchTask": "npm: dev - react"
+        },
+        // ref: https://nextjs.org/docs/pages/building-your-application/configuring/debugging
+        {
+            "name": "Next.js: debug server-side",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}/nextjs",
+        },
+        {
+            "name": "Next.js: debug client-side",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "cwd": "${workspaceFolder}/nextjs",
+            "webRoot": "${workspaceFolder}/nextjs",
+            "preLaunchTask": "npm: dev - nextjs",
+            "resolveSourceMapLocations": [
+                "!**/node_modules/**"
+            ]
+        },
+        {
+            "name": "Next.js: debug full stack",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}/nextjs",
+            "serverReadyAction": {
+                "pattern": "started server on .+, url: (https?://.+)",
+                "uriFormat": "%s",
+                "action": "debugWithChrome"
+            }
         }
     ]
 }
