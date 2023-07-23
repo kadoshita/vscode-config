@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch Cargo",
+            "cwd": "${workspaceFolder}/rust",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--manifest-path=${workspaceFolder}/rust/Cargo.toml"
+                ]
+            },
+            "args": [],
+        },
+        {
             "name": "Attach by Process ID",
             "processId": "${command:PickProcess}",
             "request": "attach",
