@@ -6,8 +6,17 @@
 			"script": "dev",
 			"path": "react-vite",
 			"problemMatcher": [],
-			"label": "npm: dev - react",
+			"label": "npm: dev - react-vite",
 			"detail": "vite",
+			"isBackground": true
+		},
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "react-webpack",
+			"problemMatcher": [],
+			"label": "npm: dev - react-webpack",
+			"detail": "webpack",
 			"isBackground": true
 		},
 		{

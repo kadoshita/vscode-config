@@ -33,7 +33,18 @@
             "name": "Launch react app (vite)",
             "url": "http://localhost:5173",
             "webRoot": "${workspaceFolder}/react-vite",
-            "preLaunchTask": "npm: dev - react"
+            "preLaunchTask": "npm: dev - react-vite"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch react app (webpack)",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/react-webpack",
+            "preLaunchTask": "npm: dev - react-webpack",
+            "resolveSourceMapLocations": [
+                "!**/node_modules/**"
+            ]
         },
         // ref: https://nextjs.org/docs/pages/building-your-application/configuring/debugging
         {
